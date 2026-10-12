@@ -1,0 +1,14 @@
+Como já apresentado na Tarefa 1, escolhemos PCBs pela familiaridade com a tecnologia em equipes extracurriculares e 
+pelo interesse comum no tema, que também tem a ver com o curso de Engenharia de Controle e Automação.
+
+Nas tarefas seguintes, a gente foi detalhando a fábrica. Hoje ela produz três tipos de placa: uma placa de sensor IoT 
+(componentes SMD), uma fonte industrial (componentes de furo passante) e uma controladora multicamada, que é a mais complexa 
+e a de maior valor. O processo de produção passa por máquinas de corte a laser, posicionamento de componentes (pick-and-place), 
+soldagem por refusão (reflow) ou por onda, inspeção óptica automatizada (AOI) e teste funcional. Cada produto usa só as etapas 
+que fazem sentido pra ele.
+
+Nesta tarefa, o foco foi deixar o projeto mais fácil de manter e mais robusto. O Gradle a
+gora cuida da compilação, da execução e do Javadoc, sem precisar de comandos manuais. Documentamos as 
+classes e os métodos e criamos exceções próprias para os erros da fábrica, como falta de matéria-prima, orçamento 
+insuficiente e máquina em manutenção. Toda operação confere tudo antes de mexer no estado, então se algo der errado a
+ planta não fica pela metade. O menu avisa o que aconteceu e continua funcionando
